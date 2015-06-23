@@ -72,11 +72,11 @@ DROP TABLE IF EXISTS `villages`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `villages` (
   `id` char(10) COLLATE utf8_unicode_ci NOT NULL,
-  `distric_id` char(7) COLLATE utf8_unicode_ci NOT NULL,
+  `district_id` char(7) COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `villages_distric_id_index` (`distric_id`),
-  CONSTRAINT `villages_distric_id_foreign` FOREIGN KEY (`distric_id`) REFERENCES `districts` (`id`)
+  KEY `villages_district_id_index` (`district_id`),
+  CONSTRAINT `villages_district_id_foreign` FOREIGN KEY (`district_id`) REFERENCES `districts` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
