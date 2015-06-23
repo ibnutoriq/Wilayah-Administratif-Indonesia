@@ -2,7 +2,7 @@
 
 DB_NAME=indonesia
 DB_USER=root
-DB_PASS=caps123ee
+DB_PASS=''
 
 curl http://mfdonline.bps.go.id/index.php?link=hasil_pencarian --data "pilihcari=desa&kata_kunci=%25" > $DB_NAME.html
 ./parse.py $DB_NAME.html
